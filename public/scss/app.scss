@@ -1,0 +1,60 @@
+/* Estilos generales para cuando no está en modo oscuro */
+.carta {
+    transition: all ease-in-out 200ms;
+
+    &:hover img {
+        animation: subirBajar 200ms ease-in-out;
+    }
+
+    &:hover #no-mover {
+        opacity: 1;
+    }
+}
+
+#no-mover {
+    opacity: 0;
+    transition: all ease-in-out 200ms;
+}
+
+/* Animación para la imagen de la carta */
+@keyframes subirBajar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Definición de colores para los tipos */
+$tipo-colores: (
+    acero: #949494,
+    agua: #56a1f7,
+    bicho: #a6b91a,
+    dragon: #6f35fc,
+    fuego: #ee6f30,
+    fantasma: #735797,
+    hielo: #a0fffa,
+    lucha: #9b5500,
+    planta: #8dea57,
+    psiquico: #f95587,
+    roca: #903f21,
+    siniestro: #5b597e,
+    tierra: #724c1f,
+    veneno: #a16ae2,
+    volador: #9bb9d3,
+    electrico: #f7d02c,
+    hada: #ffabd5,
+    normal: #b7b7b3,
+);
+
+// Genera clases CSS con colores de fondo y texto para tipos
+@each $tipo, $color in $tipo-colores {
+    .tipo-#{$tipo} {
+        background-color: $color;
+        color: white;
+    }
+}

@@ -1,0 +1,141 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.card-title, .card-text {
+  color: white;
+}
+
+.carta {
+  transition: all ease-in-out 200ms;
+}
+
+.carta:hover img {
+  animation: subirBajar 1s linear;
+}
+
+.carta:hover #no-mover {
+  opacity: 1;
+}
+
+#no-mover {
+  opacity: 0;
+  transition: all ease-in-out 200ms;
+}
+
+@keyframes subirBajar {
+  0% {
+      transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-10deg) scale(1.08);
+  }
+  50% {
+      transform: rotate(10deg) scale(1.09);
+  }
+  75% {
+    transform: rotate(-5deg) scale(1.08);
+  }
+  100% {
+      transform: rotate(0deg) scale(1);
+  }
+}
+
+.tipo-acero {
+  background-color: #949494;
+  color: white;
+}
+
+.tipo-agua {
+  background-color: #56a1f7;
+  color: white;
+}
+
+.tipo-bicho {
+  background-color: #a6b91a;
+  color: white;
+}
+
+.tipo-dragon {
+  background-color: #6f35fc;
+  color: white;
+}
+
+.tipo-fuego {
+  background-color: #ee6f30;
+  color: white;
+}
+
+.tipo-fantasma {
+  background-color: #735797;
+  color: white;
+}
+
+.tipo-hielo {
+  background-color: #a0fffa;
+  color: white;
+}
+
+.tipo-lucha {
+  background-color: #9b5500;
+  color: white;
+}
+
+.tipo-planta {
+  background-color: #8dea57;
+  color: white;
+}
+
+.tipo-psiquico {
+  background-color: #f95587;
+  color: white;
+}
+
+.tipo-roca {
+  background-color: #903f21;
+  color: white;
+}
+
+.tipo-siniestro {
+  background-color: #5b597e;
+  color: white;
+}
+
+.tipo-tierra {
+  background-color: #724c1f;
+  color: white;
+}
+
+.tipo-veneno {
+  background-color: #a16ae2;
+  color: white;
+}
+
+.tipo-volador {
+  background-color: #9bb9d3;
+  color: white;
+}
+
+.tipo-electrico {
+  background-color: #f7d02c;
+  color: white;
+}
+
+.tipo-hada {
+  background-color: #ffabd5;
+  color: white;
+}
+
+.tipo-normal {
+  background-color: #b7b7b3;
+  color: white;
+}
+
+.container {
+  overflow: visible !important;
+}
